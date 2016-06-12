@@ -1,0 +1,15 @@
+{% extends '::base.html.twig' %}
+
+{% block body -%}
+    <div style="width:50%;margin:0 auto;padding-top:2vh;"> <!-- Inline styling is typically poor practice but for the purposes of this demo... -->
+            <label for="searchInpt">Search: <label>
+            <input id="searchInpt" type="text" placeholder="Enter something here..."/>
+            <input id="submitBtn" class="btn btn-default" type="submit">
+    </div>
+
+    <div id="resultsCntr"></div>
+
+{% javascripts '@TwitterAppDefaultBundle/Resources/public/js/*' %}
+    <script src="{{ asset_url }}"></script>
+{% endjavascripts %}
+{% endblock %}

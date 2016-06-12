@@ -1,0 +1,6 @@
+twitterapp_default:
+    resource: "@TwitterAppDefaultBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+
