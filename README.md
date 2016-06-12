@@ -9,6 +9,6 @@ When the user first loads the webpage (/twitter/) they are presented with a text
 
 The results are returned in JSON format which are then decoded. An iterative loop cycles through our result and makes Tweet objects out of the relavent handle, created at and text values. An array containing our Tweet objects is serialized to JSON encoding and is sent back to the controller. The controller builds a Response object from this array and sends it to the front end.
 
-Finally, upon success, I use javascrip to iterate through the JSON array and the results are displayed as blockquotes (again, stylized with Bootstrap) and hidden/shown using jQuery animations.
+Finally, upon success,javascript iterates through the JSON array and the results are displayed as blockquotes (again, stylized with Bootstrap) and hidden/shown using jQuery animations.
 
 To test this application one can use the built-in web server provided with PHP5.4 or newer. From the /twitterapp/ directory, run 'php app/console server:run'. For more information on running this locally please read: http://symfony.com/doc/current/cookbook/web_server/built_in.html
